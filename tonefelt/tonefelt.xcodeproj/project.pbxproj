@@ -1,0 +1,614 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5371791227FFAD95007DB86A /* Songs in Resources */ = {isa = PBXBuildFile; fileRef = 5371791127FFAD95007DB86A /* Songs */; };
+		5393629D27FFA4BB00A2A3CA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5393629C27FFA4BB00A2A3CA /* AVFoundation.framework */; };
+		53BF7BE527E650C300308719 /* tonefeltApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BF7BE427E650C300308719 /* tonefeltApp.swift */; };
+		53BF7BE727E650C300308719 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BF7BE627E650C300308719 /* ContentView.swift */; };
+		53BF7BE927E650C500308719 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53BF7BE827E650C500308719 /* Assets.xcassets */; };
+		53BF7BEC27E650C500308719 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53BF7BEB27E650C500308719 /* Preview Assets.xcassets */; };
+		53BF7BF627E650C500308719 /* tonefeltTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BF7BF527E650C500308719 /* tonefeltTests.swift */; };
+		53BF7C0027E650C500308719 /* tonefeltUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BF7BFF27E650C500308719 /* tonefeltUITests.swift */; };
+		53BF7C0227E650C500308719 /* tonefeltUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BF7C0127E650C500308719 /* tonefeltUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		53BF7BF227E650C500308719 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 53BF7BD927E650C300308719 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53BF7BE027E650C300308719;
+			remoteInfo = tonefelt;
+		};
+		53BF7BFC27E650C500308719 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 53BF7BD927E650C300308719 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53BF7BE027E650C300308719;
+			remoteInfo = tonefelt;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5371791127FFAD95007DB86A /* Songs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Songs; sourceTree = "<group>"; };
+		5371791327FFB305007DB86A /* Heat Waves.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Heat Waves.mp3"; sourceTree = "<group>"; };
+		5371791427FFB305007DB86A /* Take Five.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Take Five.mp3"; sourceTree = "<group>"; };
+		5371791527FFB306007DB86A /* Back in Black.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Back in Black.mp3"; sourceTree = "<group>"; };
+		5371791627FFB306007DB86A /* The Hills.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The Hills.mp3"; sourceTree = "<group>"; };
+		5371791727FFB306007DB86A /* Give Life Back to Music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Give Life Back to Music.mp3"; sourceTree = "<group>"; };
+		5371791827FFB306007DB86A /* Zeze.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Zeze.mp3; sourceTree = "<group>"; };
+		5393629C27FFA4BB00A2A3CA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		53BF7BE127E650C300308719 /* tonefelt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tonefelt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		53BF7BE427E650C300308719 /* tonefeltApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tonefeltApp.swift; sourceTree = "<group>"; };
+		53BF7BE627E650C300308719 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		53BF7BE827E650C500308719 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		53BF7BEB27E650C500308719 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		53BF7BF127E650C500308719 /* tonefeltTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tonefeltTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		53BF7BF527E650C500308719 /* tonefeltTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tonefeltTests.swift; sourceTree = "<group>"; };
+		53BF7BFB27E650C500308719 /* tonefeltUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tonefeltUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		53BF7BFF27E650C500308719 /* tonefeltUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tonefeltUITests.swift; sourceTree = "<group>"; };
+		53BF7C0127E650C500308719 /* tonefeltUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tonefeltUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		53BF7BDE27E650C300308719 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5393629D27FFA4BB00A2A3CA /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53BF7BEE27E650C500308719 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53BF7BF827E650C500308719 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5393629B27FFA4BB00A2A3CA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5393629C27FFA4BB00A2A3CA /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		53BF7BD827E650C300308719 = {
+			isa = PBXGroup;
+			children = (
+				53BF7BE327E650C300308719 /* tonefelt */,
+				53BF7BF427E650C500308719 /* tonefeltTests */,
+				53BF7BFE27E650C500308719 /* tonefeltUITests */,
+				53BF7BE227E650C300308719 /* Products */,
+				5393629B27FFA4BB00A2A3CA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		53BF7BE227E650C300308719 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				53BF7BE127E650C300308719 /* tonefelt.app */,
+				53BF7BF127E650C500308719 /* tonefeltTests.xctest */,
+				53BF7BFB27E650C500308719 /* tonefeltUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		53BF7BE327E650C300308719 /* tonefelt */ = {
+			isa = PBXGroup;
+			children = (
+				53BF7BE427E650C300308719 /* tonefeltApp.swift */,
+				53BF7BE627E650C300308719 /* ContentView.swift */,
+				53BF7BE827E650C500308719 /* Assets.xcassets */,
+				5371791527FFB306007DB86A /* Back in Black.mp3 */,
+				5371791727FFB306007DB86A /* Give Life Back to Music.mp3 */,
+				5371791327FFB305007DB86A /* Heat Waves.mp3 */,
+				5371791427FFB305007DB86A /* Take Five.mp3 */,
+				5371791627FFB306007DB86A /* The Hills.mp3 */,
+				5371791827FFB306007DB86A /* Zeze.mp3 */,
+				5371791127FFAD95007DB86A /* Songs */,
+				53BF7BEA27E650C500308719 /* Preview Content */,
+			);
+			path = tonefelt;
+			sourceTree = "<group>";
+		};
+		53BF7BEA27E650C500308719 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				53BF7BEB27E650C500308719 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		53BF7BF427E650C500308719 /* tonefeltTests */ = {
+			isa = PBXGroup;
+			children = (
+				53BF7BF527E650C500308719 /* tonefeltTests.swift */,
+			);
+			path = tonefeltTests;
+			sourceTree = "<group>";
+		};
+		53BF7BFE27E650C500308719 /* tonefeltUITests */ = {
+			isa = PBXGroup;
+			children = (
+				53BF7BFF27E650C500308719 /* tonefeltUITests.swift */,
+				53BF7C0127E650C500308719 /* tonefeltUITestsLaunchTests.swift */,
+			);
+			path = tonefeltUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		53BF7BE027E650C300308719 /* tonefelt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53BF7C0527E650C500308719 /* Build configuration list for PBXNativeTarget "tonefelt" */;
+			buildPhases = (
+				53BF7BDD27E650C300308719 /* Sources */,
+				53BF7BDE27E650C300308719 /* Frameworks */,
+				53BF7BDF27E650C300308719 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tonefelt;
+			productName = tonefelt;
+			productReference = 53BF7BE127E650C300308719 /* tonefelt.app */;
+			productType = "com.apple.product-type.application";
+		};
+		53BF7BF027E650C500308719 /* tonefeltTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53BF7C0827E650C500308719 /* Build configuration list for PBXNativeTarget "tonefeltTests" */;
+			buildPhases = (
+				53BF7BED27E650C500308719 /* Sources */,
+				53BF7BEE27E650C500308719 /* Frameworks */,
+				53BF7BEF27E650C500308719 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				53BF7BF327E650C500308719 /* PBXTargetDependency */,
+			);
+			name = tonefeltTests;
+			productName = tonefeltTests;
+			productReference = 53BF7BF127E650C500308719 /* tonefeltTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		53BF7BFA27E650C500308719 /* tonefeltUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53BF7C0B27E650C500308719 /* Build configuration list for PBXNativeTarget "tonefeltUITests" */;
+			buildPhases = (
+				53BF7BF727E650C500308719 /* Sources */,
+				53BF7BF827E650C500308719 /* Frameworks */,
+				53BF7BF927E650C500308719 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				53BF7BFD27E650C500308719 /* PBXTargetDependency */,
+			);
+			name = tonefeltUITests;
+			productName = tonefeltUITests;
+			productReference = 53BF7BFB27E650C500308719 /* tonefeltUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		53BF7BD927E650C300308719 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					53BF7BE027E650C300308719 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					53BF7BF027E650C500308719 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 53BF7BE027E650C300308719;
+					};
+					53BF7BFA27E650C500308719 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 53BF7BE027E650C300308719;
+					};
+				};
+			};
+			buildConfigurationList = 53BF7BDC27E650C300308719 /* Build configuration list for PBXProject "tonefelt" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 53BF7BD827E650C300308719;
+			productRefGroup = 53BF7BE227E650C300308719 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				53BF7BE027E650C300308719 /* tonefelt */,
+				53BF7BF027E650C500308719 /* tonefeltTests */,
+				53BF7BFA27E650C500308719 /* tonefeltUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		53BF7BDF27E650C300308719 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5371791227FFAD95007DB86A /* Songs in Resources */,
+				53BF7BEC27E650C500308719 /* Preview Assets.xcassets in Resources */,
+				53BF7BE927E650C500308719 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53BF7BEF27E650C500308719 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53BF7BF927E650C500308719 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		53BF7BDD27E650C300308719 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53BF7BE727E650C300308719 /* ContentView.swift in Sources */,
+				53BF7BE527E650C300308719 /* tonefeltApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53BF7BED27E650C500308719 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53BF7BF627E650C500308719 /* tonefeltTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53BF7BF727E650C500308719 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53BF7C0227E650C500308719 /* tonefeltUITestsLaunchTests.swift in Sources */,
+				53BF7C0027E650C500308719 /* tonefeltUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		53BF7BF327E650C500308719 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 53BF7BE027E650C300308719 /* tonefelt */;
+			targetProxy = 53BF7BF227E650C500308719 /* PBXContainerItemProxy */;
+		};
+		53BF7BFD27E650C500308719 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 53BF7BE027E650C300308719 /* tonefelt */;
+			targetProxy = 53BF7BFC27E650C500308719 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		53BF7C0327E650C500308719 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		53BF7C0427E650C500308719 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		53BF7C0627E650C500308719 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"tonefelt/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tonefelt.tonefelt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		53BF7C0727E650C500308719 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"tonefelt/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tonefelt.tonefelt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		53BF7C0927E650C500308719 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tonefelt.tonefeltTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tonefelt.app/tonefelt";
+			};
+			name = Debug;
+		};
+		53BF7C0A27E650C500308719 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tonefelt.tonefeltTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tonefelt.app/tonefelt";
+			};
+			name = Release;
+		};
+		53BF7C0C27E650C500308719 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tonefelt.tonefeltUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = tonefelt;
+			};
+			name = Debug;
+		};
+		53BF7C0D27E650C500308719 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tonefelt.tonefeltUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = tonefelt;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		53BF7BDC27E650C300308719 /* Build configuration list for PBXProject "tonefelt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53BF7C0327E650C500308719 /* Debug */,
+				53BF7C0427E650C500308719 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53BF7C0527E650C500308719 /* Build configuration list for PBXNativeTarget "tonefelt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53BF7C0627E650C500308719 /* Debug */,
+				53BF7C0727E650C500308719 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53BF7C0827E650C500308719 /* Build configuration list for PBXNativeTarget "tonefeltTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53BF7C0927E650C500308719 /* Debug */,
+				53BF7C0A27E650C500308719 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53BF7C0B27E650C500308719 /* Build configuration list for PBXNativeTarget "tonefeltUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53BF7C0C27E650C500308719 /* Debug */,
+				53BF7C0D27E650C500308719 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 53BF7BD927E650C300308719 /* Project object */;
+}

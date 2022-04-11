@@ -1,0 +1,9 @@
+
+<svg width="332px" height="81px" viewBox="0 0 332 81" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Demos" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iPhone-13" transform="translate(-29.000000, -108.000000)" fill="#AB79BC">
+            <rect id="Rectangle" x="29" y="125" width="332" height="64" rx="7"></rect>
+            <path d="M256,130 L256,115 C256,111.134007 259.134007,108 263,108 L324.927228,108 C326.611369,108 328.239055,108.607181 329.511742,109.710176 L346.819434,124.710176 C349.740923,127.242133 350.056701,131.663025 347.524744,134.584514 C346.195159,136.118651 344.265037,137 342.234921,137 L263,137 C259.134007,137 256,133.865993 256,130 Z" id="Path-3" transform="translate(308.500000, 122.500000) scale(-1, 1) translate(-308.500000, -122.500000) "></path>
+        </g>
+    </g>
+</svg>

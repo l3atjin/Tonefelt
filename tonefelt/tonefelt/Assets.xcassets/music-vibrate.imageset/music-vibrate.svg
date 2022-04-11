@@ -1,0 +1,12 @@
+
+<svg width="46px" height="32px" viewBox="0 0 46 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Demos" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iPhone-13" transform="translate(-268.000000, -779.000000)">
+            <polyline id="Path-2" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="274 808 270 804 274 800 270 796 274 792 270 788 274 784"></polyline>
+            <polyline id="Path-2" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" transform="translate(310.000000, 796.000000) scale(-1, 1) translate(-310.000000, -796.000000) " points="312 808 308 804 312 800 308 796 312 792 308 788 312 784"></polyline>
+            <g id="music-f" transform="translate(282.000000, 779.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                <path d="M12.7278761,19.6846079 L12.7278761,1.59959434 C12.7278761,0.716162779 13.444526,0 14.3285585,0 L14.3733776,0 C15.2574101,0 15.97406,0.716162779 15.97406,1.59959434 L15.97406,24.0994883 C16.2893945,27.2490895 13.701091,30.4818697 9.77301629,31.6063845 C5.46718055,32.8412714 1.180553,31.0737196 0.200935355,27.6585857 C-0.778682292,24.2434518 1.9184676,20.4748075 6.22590402,19.2399207 C8.5789072,18.5664915 10.923907,18.7872355 12.7278761,19.6830083 L12.7278761,19.6846079 Z" id="Path"></path>
+            </g>
+        </g>
+    </g>
+</svg>
