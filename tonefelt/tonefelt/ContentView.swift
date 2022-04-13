@@ -22,8 +22,48 @@ struct ContentView: View {
     
     @State var songName : String = ""
     
+    //@IBAction func buttonClicked()'
+    
+    /*func playMusic ()
+    {
+        
+        if let audioPlayer = audioPlayer, audioPlayer.isPlaying {
+            audioPlayer.pause()
+        }
+        else {
+            do {
+                let songUrl = Bundle.main.path(forResource: "Zeze", ofType: "mp3")
+                print(songUrl)
+                
+                try AVAudioSession.sharedInstance().setMode(.default)
+                try AVAudioSession.sharedInstance().setActive(true, options: .notifyOthersOnDeactivation)
+                
+                guard let songUrl = songUrl else {
+                    return
+                }
+                
+                audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: songUrl))
+                
+                guard let audioPlayer = audioPlayer else {
+                    return
+                }
+                
+                audioPlayer.play()
+
+            }
+            catch
+            {
+                print("error")
+            }
+            
+        }
+    }*/
+    
+    
     
     var body: some View {
+        
+        
         VStack(spacing: 0) {
             ZStack {
                 Color("Background Gray").edgesIgnoringSafeArea(.all)
@@ -46,6 +86,8 @@ struct ContentView: View {
                                     .padding(.top)
                                     .padding(.bottom)
                                     .fixedSize(horizontal: false, vertical: true)
+                                
+                                
                                 
                                 Text("**How can this be progressed?**")
                                     .foregroundColor(Color.white)
@@ -116,23 +158,9 @@ struct ContentView: View {
                                         .foregroundColor(Color("Hip Hop Blue"))
                                     Button(action: {
                                         print("test2")
-                                        self.selectedPage = 2
-                                        
-                                        if let path = Bundle.main.path(forResource: "Zeze", ofType: ".mp3") {
-                                            self.audioPlayer = AVAudioPlayer()
-                                            self.isPlaying.toggle()
-                                            let url = URL(fileURLWithPath: path)
-                                            do {
-                                                self.audioPlayer = try AVAudioPlayer(contentsOf: url)
-                                                self.audioPlayer?.prepareToPlay()
-                                                self.audioPlayer?.play()
-                                            } catch {
-                                                print("Error")
-                                            }
-                                        } else {
-                                            print("test1")
-                                        }
-                                        
+                                        //self.selectedPage = 2
+                                        //onClick()
+                                        tonefelt.playMusic(songName: "Zeze")
                                         
                                     }, label: {
                                         Image("play_button")
@@ -346,6 +374,7 @@ struct ContentView: View {
                     
                     Button(action: {
                         self.selectedPage = 0
+                        //onClick()
                     }, label: {
                         VStack {
                             Image(selectedPage == 0 ? "about-clicked" : "about")
@@ -361,6 +390,7 @@ struct ContentView: View {
                     
                     Button(action: {
                         self.selectedPage = 1
+                        //onClick()
                     }, label: {
                         VStack {
                             Image(selectedPage == 1 ? "music-vibrate" : "music-note-unclicked")
