@@ -24,16 +24,17 @@ struct ContentView: View {
     
     //@IBAction func buttonClicked()'
     
-    /*func playMusic ()
-    {
+    func playMusic(songName: String) {
+        print("in playMusic()")
+        print(songName)
         
         if let audioPlayer = audioPlayer, audioPlayer.isPlaying {
-            audioPlayer.pause()
+            audioPlayer.stop()
         }
         else {
             do {
-                let songUrl = Bundle.main.path(forResource: "Zeze", ofType: "mp3")
-                print(songUrl)
+                let songUrl = Bundle.main.path(forResource: songName, ofType: "mp3")
+                //print(songUrl)
                 
                 try AVAudioSession.sharedInstance().setMode(.default)
                 try AVAudioSession.sharedInstance().setActive(true, options: .notifyOthersOnDeactivation)
@@ -53,11 +54,11 @@ struct ContentView: View {
             }
             catch
             {
-                print("error")
+                print("could not find or play the music file")
             }
             
         }
-    }*/
+    }
     
     
     
@@ -158,9 +159,9 @@ struct ContentView: View {
                                         .foregroundColor(Color("Hip Hop Blue"))
                                     Button(action: {
                                         print("test2")
-                                        //self.selectedPage = 2
+                                        self.selectedPage = 2
                                         //onClick()
-                                        tonefelt.playMusic(songName: "Zeze")
+                                        //tonefelt.playMusic(songName: "Zeze")
                                         
                                     }, label: {
                                         Image("play_button")
@@ -340,6 +341,23 @@ struct ContentView: View {
                                 Spacer()
                             }
                             Spacer()
+                            // need a pause icon here
+                            Button(action: {
+                                print("play requested")
+                                self.isPlaying.toggle()
+                                tonefelt.playMusic(songName: "Zeze")
+                            }, label: {
+                                if self.isPlaying {
+                                    Image("exit").padding()
+                                        .padding(.leading, 10)
+                                }
+                                else
+                                {
+                                    Image("play_button").padding()
+                                        .padding(.leading, 10)
+                                }
+                                
+                            })
                         }
                         
                         Image("dreamland")
