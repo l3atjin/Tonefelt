@@ -8,6 +8,28 @@
 import SwiftUI
 import AVFoundation
 
+struct Song {
+    var name: String
+    var artist: String
+    var album: String
+    
+    init() {
+        name = ""
+        artist = ""
+        album = ""
+        
+    }
+    init (songName:String, artistName: String, albumName: String) {
+        name = songName
+        artist = artistName
+        album = albumName
+    }
+    
+    func display() {
+        
+    }
+}
+
 struct ContentView: View {
     
     init() {
@@ -22,44 +44,11 @@ struct ContentView: View {
     
     @State var songName : String = ""
     
+    @State var currentSong : Song = Song()
+    
     //@IBAction func buttonClicked()'
     
-    func playMusic(songName: String) {
-        print("in playMusic()")
-        print(songName)
-        
-        if let audioPlayer = audioPlayer, audioPlayer.isPlaying {
-            audioPlayer.stop()
-        }
-        else {
-            do {
-                let songUrl = Bundle.main.path(forResource: songName, ofType: "mp3")
-                //print(songUrl)
-                
-                try AVAudioSession.sharedInstance().setMode(.default)
-                try AVAudioSession.sharedInstance().setActive(true, options: .notifyOthersOnDeactivation)
-                
-                guard let songUrl = songUrl else {
-                    return
-                }
-                
-                audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: songUrl))
-                
-                guard let audioPlayer = audioPlayer else {
-                    return
-                }
-                
-                audioPlayer.play()
 
-            }
-            catch
-            {
-                print("could not find or play the music file")
-            }
-            
-        }
-    }
-    
     
     
     var body: some View {
@@ -126,9 +115,17 @@ struct ContentView: View {
                                 ZStack {
                                     Image("song_tab")
                                         .foregroundColor(Color("Pop Purple"))
-                                    Image("play_button")
-                                        .padding(.leading, 260)
-                                        .padding(.top, 15)
+                                    Button(action: {
+                                        print("test2")
+                                        self.currentSong = Song(songName: "Heat Waves", artistName: "Glass Animals", albumName: "dreamland")
+                                        self.selectedPage = 2
+                                        
+                                        
+                                    }, label: {
+                                        Image("play_button")
+                                            .padding(.leading, 260)
+                                            .padding(.top, 15)
+                                    })
                                     Image("dreamland")
                                         .resizable()
                                         .frame(width: 50.0, height: 50.0)
@@ -159,6 +156,7 @@ struct ContentView: View {
                                         .foregroundColor(Color("Hip Hop Blue"))
                                     Button(action: {
                                         print("test2")
+                                        self.currentSong = Song(songName: "Zeze", artistName: "Kodak Black, Offset, Travis Scott", albumName: "zeze")
                                         self.selectedPage = 2
                                         //onClick()
                                         //tonefelt.playMusic(songName: "Zeze")
@@ -196,9 +194,16 @@ struct ContentView: View {
                                 ZStack {
                                     Image("song_tab")
                                         .foregroundColor(Color("Electronic Gold"))
-                                    Image("play_button")
-                                        .padding(.leading, 260)
-                                        .padding(.top, 15)
+                                    Button(action: {
+                                        print("test2")
+                                        self.currentSong = Song(songName: "Give Life Back to Music", artistName: "Daft Punk", albumName: "ram")
+                                        self.selectedPage = 2
+                                        
+                                    }, label: {
+                                        Image("play_button")
+                                            .padding(.leading, 260)
+                                            .padding(.top, 15)
+                                    })
                                     Image("ram")
                                         .resizable()
                                         .frame(width: 50.0, height: 50.0)
@@ -227,9 +232,16 @@ struct ContentView: View {
                                     ZStack {
                                         Image("song_tab")
                                             .foregroundColor(Color("Rock Brown"))
-                                        Image("play_button")
-                                            .padding(.leading, 260)
-                                            .padding(.top, 15)
+                                        Button(action: {
+                                            print("test2")
+                                            self.currentSong = Song(songName: "Back in Black", artistName: "ACDC", albumName: "back in black")
+                                            self.selectedPage = 2
+                                            
+                                        }, label: {
+                                            Image("play_button")
+                                                .padding(.leading, 260)
+                                                .padding(.top, 15)
+                                        })
                                         Image("back in black")
                                             .resizable()
                                             .frame(width: 50.0, height: 50.0)
@@ -257,9 +269,16 @@ struct ContentView: View {
                                     ZStack {
                                         Image("song_tab")
                                             .foregroundColor(Color("R&B Maroon"))
-                                        Image("play_button")
-                                            .padding(.leading, 260)
-                                            .padding(.top, 15)
+                                        Button(action: {
+                                            print("test2")
+                                            self.currentSong = Song(songName: "The Hills", artistName: "The Weeknd", albumName: "beauty behind the madness")
+                                            self.selectedPage = 2
+                                            
+                                        }, label: {
+                                            Image("play_button")
+                                                .padding(.leading, 260)
+                                                .padding(.top, 15)
+                                        })
                                         Image("beauty behind the madness")
                                             .resizable()
                                             .frame(width: 50.0, height: 50.0)
@@ -287,9 +306,16 @@ struct ContentView: View {
                                     ZStack {
                                         Image("song_tab")
                                             .foregroundColor(Color("Jazz Orange"))
-                                        Image("play_button")
-                                            .padding(.leading, 260)
-                                            .padding(.top, 15)
+                                        Button(action: {
+                                            print("test2")
+                                            self.currentSong = Song(songName: "Take Five", artistName: "The Dave Brubeck Quartet", albumName: "take five")
+                                            self.selectedPage = 2
+                                            
+                                        }, label: {
+                                            Image("play_button")
+                                                .padding(.leading, 260)
+                                                .padding(.top, 15)
+                                        })
                                         Image("take five")
                                             .resizable()
                                             .frame(width: 50.0, height: 50.0)
@@ -345,7 +371,7 @@ struct ContentView: View {
                             Button(action: {
                                 print("play requested")
                                 self.isPlaying.toggle()
-                                tonefelt.playMusic(songName: "Zeze")
+                                tonefelt.playMusic(songName: self.currentSong.name)
                             }, label: {
                                 if self.isPlaying {
                                     Image("exit").padding()
@@ -360,19 +386,19 @@ struct ContentView: View {
                             })
                         }
                         
-                        Image("dreamland")
+                        Image(self.currentSong.album)
                             .resizable()
                             .frame(width: 330.0, height: 330.0)
                             .padding(.bottom, 100)
                         
-                        Text("Heat Waves")
+                        Text(self.currentSong.name)
                             .font(Font.custom("Avenir-Heavy", size: 30))
                             .foregroundColor(Color.white)
                             .frame(maxWidth: .infinity, alignment: .leading)
                             .padding(.leading, 28)
                             .padding(.top, 350)
                         
-                        Text("Glass Animals")
+                        Text(self.currentSong.artist)
                             .font(Font.custom("Avenir-Heavy", size: 22))
                             .foregroundColor(Color("Artist Name"))
                             .frame(maxWidth: .infinity, alignment: .leading)

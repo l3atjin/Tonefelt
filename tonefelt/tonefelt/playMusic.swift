@@ -11,7 +11,7 @@ import AVFoundation
 var audioPlayer:AVAudioPlayer?
 
 func playMusic(songName: String) {
-    print("in playMusic()")
+    //print("in playMusic()")
     print(songName)
     
     if let audioPlayer = audioPlayer, audioPlayer.isPlaying {

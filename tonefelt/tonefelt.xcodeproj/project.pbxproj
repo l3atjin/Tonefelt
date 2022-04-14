@@ -10,6 +10,11 @@
 		537CE7B328076CE10058413C /* playMusic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537CE7B228076CE10058413C /* playMusic.swift */; };
 		537CE7B42807737C0058413C /* Zeze.mp3 in Sources */ = {isa = PBXBuildFile; fileRef = 5371791827FFB306007DB86A /* Zeze.mp3 */; };
 		537CE7B5280773BF0058413C /* Zeze.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5371791827FFB306007DB86A /* Zeze.mp3 */; };
+		537CE7B62807BCF40058413C /* Back in Black.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5371791527FFB306007DB86A /* Back in Black.mp3 */; };
+		537CE7B72807BCF40058413C /* Give Life Back to Music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5371791727FFB306007DB86A /* Give Life Back to Music.mp3 */; };
+		537CE7B82807BCF40058413C /* Heat Waves.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5371791327FFB305007DB86A /* Heat Waves.mp3 */; };
+		537CE7B92807BCF40058413C /* Take Five.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5371791427FFB305007DB86A /* Take Five.mp3 */; };
+		537CE7BA2807BCF40058413C /* The Hills.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5371791627FFB306007DB86A /* The Hills.mp3 */; };
 		5393629D27FFA4BB00A2A3CA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5393629C27FFA4BB00A2A3CA /* AVFoundation.framework */; };
 		53BF7BE527E650C300308719 /* tonefeltApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BF7BE427E650C300308719 /* tonefeltApp.swift */; };
 		53BF7BE727E650C300308719 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BF7BE627E650C300308719 /* ContentView.swift */; };
@@ -260,6 +265,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				537CE7B62807BCF40058413C /* Back in Black.mp3 in Resources */,
+				537CE7B72807BCF40058413C /* Give Life Back to Music.mp3 in Resources */,
+				537CE7B82807BCF40058413C /* Heat Waves.mp3 in Resources */,
+				537CE7B92807BCF40058413C /* Take Five.mp3 in Resources */,
+				537CE7BA2807BCF40058413C /* The Hills.mp3 in Resources */,
 				537CE7B5280773BF0058413C /* Zeze.mp3 in Resources */,
 				53BF7BEC27E650C500308719 /* Preview Assets.xcassets in Resources */,
 				53BF7BE927E650C500308719 /* Assets.xcassets in Resources */,
