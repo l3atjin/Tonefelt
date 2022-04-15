@@ -7,6 +7,8 @@
 
 import SwiftUI
 import AVFoundation
+import LofeltHaptics
+import UIKit
 
 struct Song {
     var name: String
@@ -25,16 +27,53 @@ struct Song {
         album = albumName
     }
     
-    func display() {
-        
-    }
+    /*func display(selectedPage: Int, currentSong: Song) {
+        ZStack {
+            Image("song_tab")
+                .foregroundColor(Color("Pop Purple"))
+            Button(action: {
+                print("test2")
+                currentSong = Song(songName: "Heat Waves", artistName: "Glass Animals", albumName: "dreamland")
+                selectedPage = 2
+                
+                
+            }, label: {
+                Image("play_button")
+                    .padding(.leading, 260)
+                    .padding(.top, 15)
+            })
+            Image("dreamland")
+                .resizable()
+                .frame(width: 50.0, height: 50.0)
+                .padding(.top, 17)
+                .padding(.trailing, 265)
+            Text("Heat Waves")
+                .foregroundColor(Color.white)
+                .bold()
+                .padding(.bottom, 3)
+                .padding(.trailing, 100)
+            Text("Glass Animals")
+                .foregroundColor(Color("Artist Name"))
+                .padding(.top, 45)
+                .padding(.trailing, 116)
+                .font(Font.custom("Avenir-Heavy", size: 12))
+            Text("Pop")
+                .foregroundColor(Color.white)
+                .padding(.leading, 295)
+                .padding(.bottom, 59)
+                .font(Font.custom("Avenir-Heavy", size: 12))
+        }
+    }*/
 }
+
 
 struct ContentView: View {
     
     init() {
         UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.white, .font : UIFont(name: "Avenir-Heavy", size: 36)!]
     }
+    
+    
 
     @State var selectedPage = 0
     

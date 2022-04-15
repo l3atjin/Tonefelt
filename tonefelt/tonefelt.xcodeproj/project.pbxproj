@@ -15,6 +15,7 @@
 		537CE7B82807BCF40058413C /* Heat Waves.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5371791327FFB305007DB86A /* Heat Waves.mp3 */; };
 		537CE7B92807BCF40058413C /* Take Five.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5371791427FFB305007DB86A /* Take Five.mp3 */; };
 		537CE7BA2807BCF40058413C /* The Hills.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5371791627FFB306007DB86A /* The Hills.mp3 */; };
+		537CE7BC280903540058413C /* LofeltHaptics.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 537CE7BB280903540058413C /* LofeltHaptics.xcframework */; };
 		5393629D27FFA4BB00A2A3CA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5393629C27FFA4BB00A2A3CA /* AVFoundation.framework */; };
 		53BF7BE527E650C300308719 /* tonefeltApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BF7BE427E650C300308719 /* tonefeltApp.swift */; };
 		53BF7BE727E650C300308719 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BF7BE627E650C300308719 /* ContentView.swift */; };
@@ -50,6 +51,7 @@
 		5371791727FFB306007DB86A /* Give Life Back to Music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Give Life Back to Music.mp3"; sourceTree = "<group>"; };
 		5371791827FFB306007DB86A /* Zeze.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Zeze.mp3; sourceTree = "<group>"; };
 		537CE7B228076CE10058413C /* playMusic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = playMusic.swift; sourceTree = "<group>"; };
+		537CE7BB280903540058413C /* LofeltHaptics.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = LofeltHaptics.xcframework; path = "../../../lofelt-studio-sdk-main/ios-examples/LofeltHapticsExamplePreAuthored/LofeltHapticsExamplePreAuthored/Frameworks/LofeltHaptics.xcframework"; sourceTree = "<group>"; };
 		5393629C27FFA4BB00A2A3CA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		53BF7BE127E650C300308719 /* tonefelt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tonefelt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53BF7BE427E650C300308719 /* tonefeltApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tonefeltApp.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				537CE7BC280903540058413C /* LofeltHaptics.xcframework in Frameworks */,
 				5393629D27FFA4BB00A2A3CA /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -93,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				5393629C27FFA4BB00A2A3CA /* AVFoundation.framework */,
+				537CE7BB280903540058413C /* LofeltHaptics.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

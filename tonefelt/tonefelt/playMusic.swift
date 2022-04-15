@@ -7,8 +7,16 @@
 
 import Foundation
 import AVFoundation
+import LofeltHaptics
+import UIKit
 
 var audioPlayer:AVAudioPlayer?
+var haptics: LofeltHaptics?
+
+func loadHapticData(fileName: String) -> Data {
+    let hapticData = NSDataAsset(name: fileName)
+    return hapticData!.data
+}
 
 func playMusic(songName: String) {
     //print("in playMusic()")
@@ -34,7 +42,7 @@ func playMusic(songName: String) {
             guard let audioPlayer = audioPlayer else {
                 return
             }
-            
+            try? haptics?.load(from: loadHapticData(fileName: "Achievement_1.haptic"))
             audioPlayer.play()
 
         }
