@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		533B4163280A0EA700B87FBE /* Back in Black.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5371791527FFB306007DB86A /* Back in Black.mp3 */; };
+		533B4164280A0EA700B87FBE /* Give Life Back to Music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5371791727FFB306007DB86A /* Give Life Back to Music.mp3 */; };
+		533B4165280A0EA700B87FBE /* Heat Waves.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5371791327FFB305007DB86A /* Heat Waves.mp3 */; };
+		533B4166280A0EA700B87FBE /* Take Five.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5371791427FFB305007DB86A /* Take Five.mp3 */; };
+		533B4167280A0EA700B87FBE /* The Hills.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5371791627FFB306007DB86A /* The Hills.mp3 */; };
+		533B4168280A0EA700B87FBE /* Zeze.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5371791827FFB306007DB86A /* Zeze.mp3 */; };
 		537CE7B328076CE10058413C /* playMusic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537CE7B228076CE10058413C /* playMusic.swift */; };
-		537CE7B42807737C0058413C /* Zeze.mp3 in Sources */ = {isa = PBXBuildFile; fileRef = 5371791827FFB306007DB86A /* Zeze.mp3 */; };
-		537CE7B5280773BF0058413C /* Zeze.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5371791827FFB306007DB86A /* Zeze.mp3 */; };
-		537CE7B62807BCF40058413C /* Back in Black.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5371791527FFB306007DB86A /* Back in Black.mp3 */; };
-		537CE7B72807BCF40058413C /* Give Life Back to Music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5371791727FFB306007DB86A /* Give Life Back to Music.mp3 */; };
-		537CE7B82807BCF40058413C /* Heat Waves.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5371791327FFB305007DB86A /* Heat Waves.mp3 */; };
-		537CE7B92807BCF40058413C /* Take Five.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5371791427FFB305007DB86A /* Take Five.mp3 */; };
-		537CE7BA2807BCF40058413C /* The Hills.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5371791627FFB306007DB86A /* The Hills.mp3 */; };
-		537CE7BC280903540058413C /* LofeltHaptics.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 537CE7BB280903540058413C /* LofeltHaptics.xcframework */; };
+		53914168280A247D00854D1E /* LofeltHaptics.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 533B4160280A0CBB00B87FBE /* LofeltHaptics.xcframework */; };
+		53914169280A247D00854D1E /* LofeltHaptics.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 533B4160280A0CBB00B87FBE /* LofeltHaptics.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5393629D27FFA4BB00A2A3CA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5393629C27FFA4BB00A2A3CA /* AVFoundation.framework */; };
 		53BF7BE527E650C300308719 /* tonefeltApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BF7BE427E650C300308719 /* tonefeltApp.swift */; };
 		53BF7BE727E650C300308719 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BF7BE627E650C300308719 /* ContentView.swift */; };
@@ -43,7 +43,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		5391416A280A247D00854D1E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				53914169280A247D00854D1E /* LofeltHaptics.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		533B4160280A0CBB00B87FBE /* LofeltHaptics.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = LofeltHaptics.xcframework; sourceTree = "<group>"; };
 		5371791327FFB305007DB86A /* Heat Waves.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Heat Waves.mp3"; sourceTree = "<group>"; };
 		5371791427FFB305007DB86A /* Take Five.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Take Five.mp3"; sourceTree = "<group>"; };
 		5371791527FFB306007DB86A /* Back in Black.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Back in Black.mp3"; sourceTree = "<group>"; };
@@ -51,7 +66,6 @@
 		5371791727FFB306007DB86A /* Give Life Back to Music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Give Life Back to Music.mp3"; sourceTree = "<group>"; };
 		5371791827FFB306007DB86A /* Zeze.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Zeze.mp3; sourceTree = "<group>"; };
 		537CE7B228076CE10058413C /* playMusic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = playMusic.swift; sourceTree = "<group>"; };
-		537CE7BB280903540058413C /* LofeltHaptics.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = LofeltHaptics.xcframework; path = "../../../lofelt-studio-sdk-main/ios-examples/LofeltHapticsExamplePreAuthored/LofeltHapticsExamplePreAuthored/Frameworks/LofeltHaptics.xcframework"; sourceTree = "<group>"; };
 		5393629C27FFA4BB00A2A3CA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		53BF7BE127E650C300308719 /* tonefelt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tonefelt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53BF7BE427E650C300308719 /* tonefeltApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tonefeltApp.swift; sourceTree = "<group>"; };
@@ -70,7 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				537CE7BC280903540058413C /* LofeltHaptics.xcframework in Frameworks */,
+				53914168280A247D00854D1E /* LofeltHaptics.xcframework in Frameworks */,
 				5393629D27FFA4BB00A2A3CA /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -96,7 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				5393629C27FFA4BB00A2A3CA /* AVFoundation.framework */,
-				537CE7BB280903540058413C /* LofeltHaptics.xcframework */,
+				533B4160280A0CBB00B87FBE /* LofeltHaptics.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -175,6 +189,7 @@
 				53BF7BDD27E650C300308719 /* Sources */,
 				53BF7BDE27E650C300308719 /* Frameworks */,
 				53BF7BDF27E650C300308719 /* Resources */,
+				5391416A280A247D00854D1E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -269,12 +284,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				537CE7B62807BCF40058413C /* Back in Black.mp3 in Resources */,
-				537CE7B72807BCF40058413C /* Give Life Back to Music.mp3 in Resources */,
-				537CE7B82807BCF40058413C /* Heat Waves.mp3 in Resources */,
-				537CE7B92807BCF40058413C /* Take Five.mp3 in Resources */,
-				537CE7BA2807BCF40058413C /* The Hills.mp3 in Resources */,
-				537CE7B5280773BF0058413C /* Zeze.mp3 in Resources */,
+				533B4163280A0EA700B87FBE /* Back in Black.mp3 in Resources */,
+				533B4164280A0EA700B87FBE /* Give Life Back to Music.mp3 in Resources */,
+				533B4165280A0EA700B87FBE /* Heat Waves.mp3 in Resources */,
+				533B4166280A0EA700B87FBE /* Take Five.mp3 in Resources */,
+				533B4167280A0EA700B87FBE /* The Hills.mp3 in Resources */,
+				533B4168280A0EA700B87FBE /* Zeze.mp3 in Resources */,
 				53BF7BEC27E650C500308719 /* Preview Assets.xcassets in Resources */,
 				53BF7BE927E650C500308719 /* Assets.xcassets in Resources */,
 			);
@@ -301,7 +316,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				537CE7B42807737C0058413C /* Zeze.mp3 in Sources */,
 				53BF7BE727E650C300308719 /* ContentView.swift in Sources */,
 				53BF7BE527E650C300308719 /* tonefeltApp.swift in Sources */,
 				537CE7B328076CE10058413C /* playMusic.swift in Sources */,
@@ -465,6 +479,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"tonefelt/Preview Content\"";
+				DEVELOPMENT_TEAM = V5L4CSNJ5P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -478,7 +493,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = tonefelt.tonefelt;
+				PRODUCT_BUNDLE_IDENTIFIER = tonefelt.tonefelt2022;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -494,6 +509,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"tonefelt/Preview Content\"";
+				DEVELOPMENT_TEAM = V5L4CSNJ5P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -507,7 +523,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = tonefelt.tonefelt;
+				PRODUCT_BUNDLE_IDENTIFIER = tonefelt.tonefelt2022;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

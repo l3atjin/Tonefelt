@@ -307,7 +307,7 @@ struct ContentView: View {
                                     
                                     ZStack {
                                         Image("song_tab")
-                                            .foregroundColor(Color("R&B Maroon"))
+                                            .foregroundColor(Color("R_B Maroon"))
                                         Button(action: {
                                             print("test2")
                                             self.currentSong = Song(songName: "The Hills", artistName: "The Weeknd", albumName: "beauty behind the madness")
