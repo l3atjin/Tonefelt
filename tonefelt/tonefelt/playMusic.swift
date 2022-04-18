@@ -42,46 +42,18 @@ func playMusic(songName: String) {
             
             audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: songUrl))
             
-            /*guard let audioPlayer = audioPlayer else {
-                return
-            }*/
-            
-            //print(haptics?.getClipDuration())
-
-            // Play audio and haptics (audio must be played first).
-            
-            //try? haptics?.play()
-            
-            
-            /*let haptics = try? LofeltHaptics.init()
-
-            // Fetch a Haptic Clip from the asset catalog.
-            let hapticClip = NSDataAsset(name: "Stroke_1.haptic")
-
-            // Load its data into an NSString.
-            let hapticData = NSString(data: hapticClip!.data , encoding: String.Encoding.utf8.rawValue)
-
-            // Load it into the LofeltHaptics object as a String.
-            try? haptics?.load(hapticData! as String)
-
-            // Play audio and haptics (audio must be played first).
-            
-            print(haptics?.getClipDuration())
-            // Load it into the LofeltHaptics object as a String.
-            audioPlayer.play()
-            do {
-                try haptics?.play()
-            }
-            catch {
-                print("haptic error")
-            }*/
             haptics = try? LofeltHaptics.init()
             
             //let audioData = NSDataAsset(name: "Stroke_1-audio")
             //audioPlayer = try! AVAudioPlayer(data: audioData!.data)
             
             // load haptic clip
-            try? haptics?.load(from: loadHapticData(fileName: "zeze_haptic"))
+            let hapticName = songName + "_haptic"
+            print(hapticName)
+            print("Give Life Back To Music_haptic")
+            print(hapticName.count)
+            print("Give Life Back To Music_haptic".count)
+            try? haptics?.load(from: loadHapticData(fileName: hapticName))
             
             // play audio and haptic clip
             audioPlayer?.play()

@@ -413,13 +413,19 @@ struct ContentView: View {
                                 tonefelt.playMusic(songName: self.currentSong.name)
                             }, label: {
                                 if self.isPlaying {
-                                    Image("exit").padding()
+                                    Image("stopbutton").resizable()
+                                        .padding()
                                         .padding(.leading, 10)
+                                        .aspectRatio(contentMode: .fit)
+                                        .frame(width: 100)
                                 }
                                 else
                                 {
-                                    Image("play_button").padding()
+                                    Image("play_button").resizable()
+                                        .padding()
                                         .padding(.leading, 10)
+                                        .aspectRatio(contentMode: .fit)
+                                        .frame(width: 100)
                                 }
                                 
                             })
