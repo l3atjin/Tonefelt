@@ -54,6 +54,7 @@ func playMusic(songName: String) {
             print(hapticName.count)
             print("Give Life Back To Music_haptic".count)
             try? haptics?.load(from: loadHapticData(fileName: hapticName))
+            //try? haptics?.load(from: loadHapticData(fileName: "heat-waves-new"))
             
             // play audio and haptic clip
             audioPlayer?.play()
